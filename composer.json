@@ -1,0 +1,48 @@
+{
+  "name": "izniburak/bit-permission",
+  "type": "library",
+  "description": "simple PHP bitwise control to check somethings like Permissions, Roles, etc.",
+  "keywords": [
+    "bitwise",
+    "check",
+    "control",
+    "permission",
+    "role"
+  ],
+  "homepage": "https://github.com/izniburak/bit-permission",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "İzni Burak Demirtaş",
+      "email": "info@burakdemirtas.org",
+      "homepage": "https://buki.dev"
+    }
+  ],
+  "require": {
+    "php": "^8.1"
+  },
+  "require-dev": {
+    "pestphp/pest": "^1.21"
+  },
+  "autoload": {
+    "psr-4": {
+      "Buki\\BitPermission\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Buki\\Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/pest",
+    "coverage": "vendor/bin/pest --coverage"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "allow-plugins": {
+      "pestphp/pest-plugin": true
+    }
+  }
+}
